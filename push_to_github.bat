@@ -21,7 +21,7 @@ if %ERRORLEVEL% EQU 0 (
 ) else (
     echo ============================================================
     echo [NOTICE] If GitHub authentication window opened, please sign in.
-    echo If you have a Personal Access Token (PAT), you can also run:
+    echo If you have a Personal Access Token PAT, you can also run:
     echo git push https://YOUR_TOKEN@github.com/Manohar12095/Tyrosinase-PPO-Inhibitor-Discovery.git main
     echo ============================================================
 )

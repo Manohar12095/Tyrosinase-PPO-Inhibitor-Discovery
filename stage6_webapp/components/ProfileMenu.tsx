@@ -22,13 +22,11 @@ export default function ProfileMenu() {
     <div className="relative" ref={menuRef}>
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full py-1.5 px-3 hover:bg-white/10 transition-colors"
+        className="flex items-center gap-2 text-slate-300 hover:text-white text-sm font-medium cursor-pointer transition-colors"
       >
-        <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-[#22E3D0] to-[#A678F5] flex items-center justify-center">
-          <User size={14} className="text-[#050A16]" />
-        </div>
-        <span className="text-sm font-medium text-white">Profile</span>
-        <ChevronDown size={14} className="text-[#8A93AD]" />
+        <User size={18} />
+        <span>Profile</span>
+        <ChevronDown size={14} className="text-slate-400" />
       </button>
 
       {isOpen && (

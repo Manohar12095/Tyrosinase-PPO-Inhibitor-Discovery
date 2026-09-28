@@ -2,18 +2,18 @@
 
 @layer base {
   :root {
-    --bg-navy: #050A16;
-    --text-primary: #E6EAF5;
-    --text-muted: #8A93AD;
-    --score-green: #3DDC97;
-    --cyan: #22E3D0;
-    --blue: #5B8CFF;
-    --purple: #A678F5;
+    --bg-navy: #050811;
+    --text-primary: #f1f5f9;
+    --text-muted: #94a3b8;
+    --score-green: #00FF9D;
+    --cyan: #00F2FE;
+    --blue: #3B82F6;
+    --purple: #A855F7;
   }
   
   html, body {
-    background-color: #050A16;
-    color: #E6EAF5;
+    background-color: #050811;
+    color: #f1f5f9;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,7 +21,7 @@
   }
   
   ::selection {
-    background-color: rgba(34, 227, 208, 0.3);
+    background-color: rgba(0, 242, 254, 0.3);
   }
 
   body {
@@ -31,11 +31,11 @@
   body::before {
     content: "";
     position: fixed;
-    top: -400px;
-    left: -400px;
+    top: -300px;
+    left: -300px;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(34, 227, 208, 0.12) 0%, rgba(34, 227, 208, 0) 70%);
+    background: radial-gradient(circle at 20% 20%, rgba(0, 242, 254, 0.12) 0%, transparent 50%);
     z-index: -1;
     pointer-events: none;
     border-radius: 50%;
@@ -44,11 +44,11 @@
   body::after {
     content: "";
     position: fixed;
-    top: 20%;
-    right: -400px;
+    top: -100px;
+    right: -300px;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(166, 120, 245, 0.12) 0%, rgba(166, 120, 245, 0) 70%);
+    background: radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.12) 0%, transparent 50%);
     z-index: -1;
     pointer-events: none;
     border-radius: 50%;
@@ -57,66 +57,70 @@
 
 @layer components {
   .glass-card {
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: rgba(10, 16, 29, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
-    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    backdrop-filter: blur(24px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   }
   
   .glass-header {
     position: sticky;
     top: 0;
     z-index: 50;
-    height: 84px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(24px);
-    background-color: rgba(5, 10, 22, 0.7);
+    height: 64px;
+    border-bottom: 1px solid rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(12px);
+    background-color: rgba(5, 8, 17, 0.9);
   }
   
   .text-gradient {
-    background-image: linear-gradient(to right, #22E3D0, #5B8CFF, #A678F5);
+    background-image: linear-gradient(to right, #00F2FE, #38BDF8 40%, #A855F7);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   
   .pill-low {
-    border: 1px solid #4ADE80;
-    background-color: rgba(74, 222, 128, 0.15);
-    color: #4ADE80;
+    border: 1px solid rgba(16, 185, 129, 0.5);
+    background-color: rgba(2, 44, 34, 0.4);
+    color: #34d399;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 600;
     white-space: nowrap;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.15);
   }
   
   .pill-moderate {
-    border: 1px solid #F5B942;
-    background-color: rgba(245, 185, 66, 0.15);
-    color: #F5B942;
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    background-color: rgba(69, 26, 3, 0.4);
+    color: #fbbf24;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 600;
     white-space: nowrap;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.15);
   }
   
   .pill-high {
-    border: 1px solid #F0625D;
-    background-color: rgba(240, 98, 93, 0.15);
-    color: #F0625D;
+    border: 1px solid rgba(239, 68, 68, 0.5);
+    background-color: rgba(69, 10, 10, 0.4);
+    color: #f87171;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 600;
     white-space: nowrap;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.15);
   }
   
   .pill-unknown {
-    border: 1px solid #9ca3af;
-    background-color: rgba(156, 163, 175, 0.15);
-    color: #9ca3af;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background-color: rgba(15, 23, 42, 0.4);
+    color: #94a3b8;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.75rem;

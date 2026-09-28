@@ -7,7 +7,7 @@ import { Download, ChevronRight } from "lucide-react";
 import { Results, Compound } from "../lib/schema";
 import Viewer3DWrapper from "./Viewer3DWrapper";
 
-const RADAR_COLORS = ["#5B6CFF", "#F0625D", "#F5C242", "#9B6BFF", "#2DD4A7"];
+const RADAR_COLORS = ["#00FF9D", "#3B82F6", "#F59E0B", "#A855F7", "#EC4899"];
 
 export default function DashboardContent({ data }: { data: Results }) {
   const allRanked = [...data.compounds].filter(c => c.type === "candidate").sort((a, b) => (a.rank || 999) - (b.rank || 999));
@@ -88,31 +88,34 @@ export default function DashboardContent({ data }: { data: Results }) {
     <div className="space-y-16 pb-20 animate-fade-in">
       {/* Hero */}
       <section className="text-center relative">
-        <h1 className="text-4xl md:text-[88px] font-extrabold tracking-tight text-gradient leading-tight inline-block relative">
+        <h1 className="text-5xl lg:text-6xl font-extrabold text-center tracking-tight bg-gradient-to-r from-[#00F2FE] via-[#38BDF8] via-40% to-[#A855F7] bg-clip-text text-transparent filter drop-shadow-[0_0_35px_rgba(0,242,254,0.2)] pb-2">
           Stopping the Browning
-          <div className="absolute inset-0 bg-[#22E3D0] blur-[120px] opacity-20 -z-10 mix-blend-screen rounded-full"></div>
         </h1>
         
-        <div className="glass-card mx-auto mt-8 inline-flex items-center divide-x divide-white/[0.08] text-[26px] overflow-hidden">
-          <div className="px-8 py-4 font-light text-white">{numScreened} Compounds Screened</div>
-          <div className="px-8 py-4 font-light text-white">Best Score <span className="font-mono text-[#3DDC97]">{bestScore.toFixed(3)}</span> kcal/mol</div>
-          <div className="px-8 py-4 font-light text-white">PDB {data.meta.pdb_id}</div>
+        <div className="relative p-[1px] max-w-4xl mx-auto mt-8 rounded-2xl bg-gradient-to-r from-cyan-500/60 via-slate-700/40 to-purple-500/60 shadow-[0_0_25px_rgba(0,242,254,0.15)]">
+          <div className="bg-[#0A101D]/90 backdrop-blur-md rounded-2xl py-3.5 px-8 flex justify-center items-center gap-6 text-white font-medium text-lg">
+            <span>{numScreened} Compounds Screened</span>
+            <span className="text-slate-600">|</span>
+            <span>Best Score <span className="font-mono text-[#00FF9D] drop-shadow-[0_0_6px_rgba(0,255,157,0.3)]">{bestScore.toFixed(3)}</span> kcal/mol</span>
+            <span className="text-slate-600">|</span>
+            <span>PDB {data.meta.pdb_id}</span>
+          </div>
         </div>
       </section>
 
       {/* Grid */}
-      <section className="grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] gap-6">
-        <div className="glass-card p-6 flex flex-col">
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="glass-card p-6 flex flex-col lg:col-span-7">
           <h2 className="text-xl font-bold text-white mb-4">Top Candidates</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm whitespace-nowrap">
               <thead>
                 <tr className="border-b border-white/[0.08] text-[#8A93AD] bg-white/[0.02]">
                   <th className="p-3 w-10"></th>
-                  <th className="p-3">Molecule ID</th>
-                  <th className="p-3">Vina Score</th>
-                  <th className="p-3">Safety</th>
-                  <th className="p-3">Composite Score</th>
+                  <th className="p-3 uppercase text-xs tracking-wider">Molecule ID ⇅</th>
+                  <th className="p-3 uppercase text-xs tracking-wider">Vina Score ⇅</th>
+                  <th className="p-3 uppercase text-xs tracking-wider">Safety ⇅</th>
+                  <th className="p-3 uppercase text-xs tracking-wider">Composite Score ⇅</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/[0.04]">
@@ -124,13 +127,13 @@ export default function DashboardContent({ data }: { data: Results }) {
                         checked={selectedIds.includes(c.id)}
                         onChange={() => handleToggle(c.id)}
                         disabled={!selectedIds.includes(c.id) && selectedIds.length >= 5}
-                        className="w-4 h-4 rounded border-white/20 bg-black/20 accent-[#22E3D0]"
+                        className="w-4 h-4 rounded border-slate-700 bg-slate-900/80 text-cyan-500 focus:ring-0 cursor-pointer"
                       />
                     </td>
-                    <td className="p-3 font-medium text-white group-hover:text-[#22E3D0] transition-colors cursor-pointer">
+                    <td className="p-3 font-mono font-medium text-slate-100 text-sm group-hover:text-[#00F2FE] transition-colors cursor-pointer">
                       <Link href={`/library/${c.id}`}>{c.id}</Link>
                     </td>
-                    <td className="p-3 font-mono text-[#3DDC97]">{c.vina_score?.toFixed(3)}</td>
+                    <td className="p-3 font-mono font-bold text-[#00FF9D] text-sm drop-shadow-[0_0_6px_rgba(0,255,157,0.3)]">{c.vina_score?.toFixed(3)}</td>
                     <td className="p-3">
                       <span className={`pill-${c.safety_class || 'unknown'} uppercase`}>
                         {c.safety_class ? `${c.safety_class} RISK` : 'NOT ASSESSED'}
@@ -138,10 +141,10 @@ export default function DashboardContent({ data }: { data: Results }) {
                     </td>
                     <td className="p-3">
                       <div className="flex items-center gap-3">
-                        <span className="w-10 text-right">{c.composite_score.toFixed(3)}</span>
-                        <div className="w-24 h-2 bg-white/10 rounded-full overflow-hidden">
+                        <span className="w-10 text-right font-mono text-xs">{c.composite_score.toFixed(3)}</span>
+                        <div className="w-32 h-2 bg-slate-800/90 rounded-full overflow-hidden p-0.5 border border-slate-700/40">
                           <div 
-                            className="h-full bg-gradient-to-r from-[#22E3D0] to-[#5B8CFF]" 
+                            className="h-full rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 shadow-[0_0_8px_rgba(0,242,254,0.5)]" 
                             style={{ width: `${Math.min(100, Math.max(0, c.composite_score * 100))}%` }}
                           ></div>
                         </div>
@@ -157,7 +160,7 @@ export default function DashboardContent({ data }: { data: Results }) {
           </Link>
         </div>
 
-        <div className="glass-card p-6 flex flex-col">
+        <div className="glass-card p-6 flex flex-col lg:col-span-5">
           <div className="flex justify-between items-start mb-2">
             <h2 className="text-xl font-bold text-white leading-tight">Multi-property comparison<br/>of the top 5 candidates</h2>
             <button 
@@ -172,8 +175,8 @@ export default function DashboardContent({ data }: { data: Results }) {
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <RadarChart cx="50%" cy="50%" outerRadius="70%" data={radarData}>
-                <PolarGrid stroke="rgba(255,255,255,0.1)" />
-                <PolarAngleAxis dataKey="subject" tick={{ fill: "#8A93AD", fontSize: 11 }} />
+                <PolarGrid stroke="rgba(51,65,85,0.6)" />
+                <PolarAngleAxis dataKey="subject" tick={{ fill: "#94a3b8", fontSize: 11 }} />
                 <PolarRadiusAxis angle={30} domain={[0, 1]} tick={false} axisLine={false} />
                 <Tooltip content={<CustomTooltip />} />
                 {selectedCompounds.map((c, i) => (
