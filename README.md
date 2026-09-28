@@ -1,4 +1,4 @@
-﻿# Tyrosinase/PPO Inhibitor Discovery Platform
+# Tyrosinase/PPO Inhibitor Discovery Platform
 ## Team CTRL+CELL — Hackathon 2026
 
 > **"Stopping the Browning"** — Computational discovery of tyrosinase inhibitors
@@ -48,8 +48,8 @@ python -m venv venv
 ```powershell
 cd stage6_webapp
 npm install
-# Copy outputs to public/data:
-Copy-Item ..\outputs\*.json public\data\; Copy-Item ..\outputs\*.md public\data\; Copy-Item ..\outputs\*.csv public\data\
+# Build results.json from outputs:
+..\venv\Scripts\python.exe ..\pipeline\build_results.py
 npm run dev
 # Open http://localhost:3000
 ```

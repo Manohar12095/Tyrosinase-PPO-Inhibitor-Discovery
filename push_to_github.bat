@@ -9,6 +9,8 @@ echo Repository: https://github.com/Manohar12095/Tyrosinase-PPO-Inhibitor-Discov
 echo ============================================================
 echo.
 
+git add .
+git commit -m "chore: push latest updates"
 git push -u origin main
 
 echo.
