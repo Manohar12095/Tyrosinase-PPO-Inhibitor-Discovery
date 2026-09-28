@@ -1,0 +1,27 @@
+# SMILES batch for SwissADME (swissadme.ch) and ProTox 3.0 (tox.charite.de/protox3)
+# Paste these SMILES into the respective web tool input boxes
+# ---- SwissADME: supports newline-separated SMILES in batch mode ----
+# ---- ProTox 3.0: paste one SMILES per line in the input box ----
+
+O=C1OC(CO)=CC(=O)1 REF001 Kojic_acid
+OC[C@H]1O[C@@H](Oc2ccc(O)cc2)[C@H](O)[C@@H](O)[C@@H]1O REF002 Arbutin
+Oc1ccc(O)cc1 REF003 Hydroquinone
+O=C1C=CC=CC(O)=C1 REF004 Tropolone
+O=C1OC(CO)=CC(=O)[C@@H]1F KA001 5-Fluorokojic_acid
+O=C1OC(CO)=CC(=O)[C@@H]1Cl KA002 5-Chlorokojic_acid
+O=C1OC(CO)=CC(=O)[C@@H]1C KA003 5-Methylkojic_acid
+O=C1OC(COC)=CC(=O)1 KA004 Kojic_acid_methyl_ester
+COc1ccc(O)cc1 HQ001 4-Methoxyphenol
+Oc1ccccc1O HQ002 Catechol
+Oc1ccc(C(C)(C)C)cc1O HQ003 4-tert-Butylcatechol
+Oc1ccc(F)cc1O HQ004 4-Fluorocatechol
+Oc1cccc(O)c1Cl HQ005 4-Chlororesorcinol
+O=C1C=CC=CC(O)=C1C TL001 3-Methyltropolone
+O=C1C=CC=CC(O)=C1Cl TL002 3-Chlorotropolone
+O=C1C=C([N+](=O)[O-])C=CC(O)=C1 TL003 4-Nitrotropolone
+O=C1C=CC=CC(O)=C1C(C)C TL004 Beta-Thujaplicin
+Oc1ccc(/C=C/c2cc(O)cc(O)c2)cc1O NOV001 Oxyresveratrol
+O=Cc1ccc(O)cc1 NOV002 4-Hydroxybenzaldehyde
+OC(=O)/C=C/c1ccc(O)c(O)c1 NOV003 Caffeic_acid
+N[C@@H](CC1=CC(=O)C(O)=NC1=O)C(=O)O NOV004 Mimosine
+O=C1C=CC=CC(O)=C1C(=O)NO NOV005 Hydroxamic_acid-tropolone_hybrid

@@ -1,0 +1,18 @@
+REMARK SMILES O=c1ccccc(O)c1
+REMARK SMILES IDX 8 1 7 3 1 4 2 5 3 6 9 7 4 8 5 9 6 10
+REMARK H PARENT 8 2
+ROOT
+ATOM      1  O   UNL     1       2.745  -0.473  -0.000  1.00  0.00    -0.508 OA
+ATOM      2  H   UNL     1       3.237   0.343  -0.188  1.00  0.00    +0.293 HD
+ENDROOT
+BRANCH   1   3
+ATOM      3  C   UNL     1       1.373  -0.200  -0.008  1.00  0.00    +0.119 A 
+ATOM      4  O   UNL     1      -0.607   2.723  -0.545  1.00  0.00    -0.290 OA
+ATOM      5  C   UNL     1      -0.457   1.539  -0.304  1.00  0.00    +0.182 A 
+ATOM      6  C   UNL     1      -1.724   0.740  -0.092  1.00  0.00    +0.052 A 
+ATOM      7  C   UNL     1       0.978   1.053  -0.254  1.00  0.00    +0.098 A 
+ATOM      8  C   UNL     1      -1.767  -0.565   0.181  1.00  0.00    +0.004 A 
+ATOM      9  C   UNL     1      -0.745  -1.415   0.321  1.00  0.00    +0.004 A 
+ATOM     10  C   UNL     1       0.583  -1.253   0.240  1.00  0.00    +0.046 A 
+ENDBRANCH   1   3
+TORSDOF 1

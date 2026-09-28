@@ -1,0 +1,23 @@
+id,name,smiles,role,parent,rationale,source,MW,logP,HBD,HBA,TPSA,RotBonds,RingCount,ArRings,HeavyAtoms,Lipinski_violations
+REF001,Kojic acid,O=C1OC(CO)=CC(=O)1,reference,,,ChEMBL:CHEMBL133058,128.011,-1.012,1,4,63.6,2,1,0,9,0
+REF002,Arbutin,OC[C@H]1O[C@@H](Oc2ccc(O)cc2)[C@H](O)[C@@H](O)[C@@H]1O,reference,,,ChEMBL:CHEMBL299374,272.09,-1.429,5,7,119.61,8,2,1,19,0
+REF003,Hydroquinone,Oc1ccc(O)cc1,reference,,,ChEMBL:CHEMBL781,110.037,1.098,2,2,40.46,2,1,1,8,0
+REF004,Tropolone,O=C1C=CC=CC(O)=C1,reference,,,ChEMBL:CHEMBL276013,122.037,0.752,1,2,37.3,1,1,1,9,0
+KA001,5-Fluorokojic acid,O=C1OC(CO)=CC(=O)[C@@H]1F,analog,REF001,"Electron-withdrawing F at C5 increases electrophilicity of carbonyl, potentially tightening Cu chelation",designed,160.017,-0.673,1,4,63.6,2,1,0,11,0
+KA002,5-Chlorokojic acid,O=C1OC(CO)=CC(=O)[C@@H]1Cl,analog,REF001,Cl provides stronger steric effect than F; tests halogen tolerance at Cu site,designed,175.988,-0.404,1,4,63.6,2,1,0,11,0
+KA003,5-Methylkojic acid,O=C1OC(CO)=CC(=O)[C@@H]1C,analog,REF001,"Methyl group explores hydrophobic pocket near CuA (PHE90, LEU89)",designed,156.042,-0.375,1,4,63.6,2,1,0,11,0
+KA004,Kojic acid methyl ester,O=C1OC(COC)=CC(=O)1,analog,REF001,Esterification of hydroxymethyl reduces HBD count (improves logP) while probing pocket volume,designed,142.027,-0.357,0,4,52.6,2,1,0,10,0
+HQ001,4-Methoxyphenol,COc1ccc(O)cc1,analog,REF003,Known partial tyrosinase inhibitor; methoxy vs hydroxyl tests H-bond donor requirement,literature,124.052,1.401,1,2,29.46,2,1,1,9,0
+HQ002,Catechol,Oc1ccccc1O,analog,REF003,Ortho-diol: strong Cu chelator; substrate-like but inhibitory at high concentration,literature,110.037,1.098,2,2,40.46,2,1,1,8,0
+HQ003,4-tert-Butylcatechol,Oc1ccc(C(C)(C)C)cc1O,analog,REF003,"Bulky tBu fills hydrophobic sub-pocket (TRP93, PHE292); commercial antioxidant",literature,166.099,2.395,2,2,40.46,2,1,1,12,0
+HQ004,4-Fluorocatechol,Oc1ccc(F)cc1O,analog,REF003,Fluorine bioisostere of OH; tests whether para-F maintains inhibition,designed,128.027,1.237,2,2,40.46,2,1,1,9,0
+HQ005,4-Chlororesorcinol,Oc1cccc(O)c1Cl,analog,REF003,Meta-diol + para-Cl: explores effect of diol positioning on Cu coordination geometry,designed,143.998,1.751,2,2,40.46,2,1,1,9,0
+TL001,3-Methyltropolone,O=C1C=CC=CC(O)=C1C,analog,REF004,Methyl at C3 adjacent to O=C; exploits hydrophobic space seen with tropolone pose,literature,136.052,1.061,1,2,37.3,1,1,1,10,0
+TL002,3-Chlorotropolone,O=C1C=CC=CC(O)=C1Cl,analog,REF004,Halogen at C3 tests H-bond acceptor capacity vs steric clash in tight pocket,designed,155.998,1.406,1,2,37.3,1,1,1,10,0
+TL003,4-Nitrotropolone,O=C1C=C([N+](=O)[O-])C=CC(O)=C1,analog,REF004,Strong EWG at C4 alters pi-electron density of chelating enol; toxicophore flag expected,designed,167.022,0.661,1,4,80.44,2,1,1,12,0
+TL004,Beta-Thujaplicin,O=C1C=CC=CC(O)=C1C(C)C,analog,REF004,Natural tropolone derivative from Western red cedar; known copper chelator with antimicrobial activity,literature,164.084,1.876,1,2,37.3,2,1,1,12,0
+NOV001,Oxyresveratrol,Oc1ccc(/C=C/c2cc(O)cc(O)c2)cc1O,novel,,Natural stilbene with two catechol-like OH pairs; potent PPO inhibitor in literature (IC50 ~1 uM); included as novel positive control,literature,244.074,2.679,4,4,80.92,6,2,2,18,0
+NOV002,4-Hydroxybenzaldehyde,O=Cc1ccc(O)cc1,novel,,Simple phenolic aldehyde; Schiff-base former that may covalently cap active-site Lys,literature,122.037,1.205,1,2,37.3,2,1,1,9,0
+NOV003,Caffeic acid,OC(=O)/C=C/c1ccc(O)c(O)c1,novel,,"Catechol + alpha,beta-unsaturated acid; known competitive inhibitor; provides extended chelation arm",literature,180.042,1.196,3,4,77.76,4,1,1,13,0
+NOV004,Mimosine,N[C@@H](CC1=CC(=O)C(O)=NC1=O)C(=O)O,novel,,Plant amino acid with hydroxypyridinone chelating group; strong Cu binder different from catechol,literature,212.043,-1.219,3,6,130.05,4,1,0,15,0
+NOV005,Hydroxamic acid-tropolone hybrid,O=C1C=CC=CC(O)=C1C(=O)NO,novel,REF004,Adds hydroxamic acid arm to tropolone; dual chelation mode (enol-O + hydroxamate) targeting both Cu ions simultaneously,designed,181.038,-0.129,3,4,86.63,3,1,1,13,0

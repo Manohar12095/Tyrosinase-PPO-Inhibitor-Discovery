@@ -1,0 +1,926 @@
+[
+  {
+    "id": "REF001",
+    "name": "Kojic acid",
+    "smiles": "O=C1OC(CO)=CC(=O)1",
+    "vina_score_kcal_mol": -5.408,
+    "all_pose_scores": [
+      -5.408,
+      -5.102,
+      -4.844,
+      -4.609,
+      -4.556,
+      -4.521,
+      -4.457,
+      -4.42,
+      -4.244
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 256,
+        "name": "GLU",
+        "min_dist_A": 3.083
+      },
+      {
+        "chain": "A",
+        "seq": 296,
+        "name": "HIS",
+        "min_dist_A": 3.13
+      },
+      {
+        "chain": "A",
+        "seq": 85,
+        "name": "HIS",
+        "min_dist_A": 3.376
+      }
+    ],
+    "pose_file": "REF001_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "REF002",
+    "name": "Arbutin",
+    "smiles": "OC[C@H]1O[C@@H](Oc2ccc(O)cc2)[C@H](O)[C@@H](O)[C@@H]1O",
+    "vina_score_kcal_mol": -5.898,
+    "all_pose_scores": [
+      -5.898,
+      -5.752,
+      -5.628,
+      -5.371,
+      -5.236,
+      -5.194,
+      -5.147,
+      -5.125,
+      -4.975
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 280,
+        "name": "MET",
+        "min_dist_A": 2.702
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.189
+      },
+      {
+        "chain": "A",
+        "seq": 81,
+        "name": "ASN",
+        "min_dist_A": 3.269
+      }
+    ],
+    "pose_file": "REF002_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "REF003",
+    "name": "Hydroquinone",
+    "smiles": "Oc1ccc(O)cc1",
+    "vina_score_kcal_mol": -5.386,
+    "all_pose_scores": [
+      -5.386,
+      -5.377,
+      -5.293,
+      -5.018,
+      -5.016,
+      -4.384,
+      -4.365,
+      -3.834,
+      -3.809
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 280,
+        "name": "MET",
+        "min_dist_A": 2.893
+      },
+      {
+        "chain": "A",
+        "seq": 260,
+        "name": "ASN",
+        "min_dist_A": 3.149
+      },
+      {
+        "chain": "A",
+        "seq": 324,
+        "name": "THR",
+        "min_dist_A": 3.265
+      }
+    ],
+    "pose_file": "REF003_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "REF004",
+    "name": "Tropolone",
+    "smiles": "O=C1C=CC=CC(O)=C1",
+    "vina_score_kcal_mol": -5.728,
+    "all_pose_scores": [
+      -5.728,
+      -5.566,
+      -5.524,
+      -5.511,
+      -5.489,
+      -5.434,
+      -5.209,
+      -4.573,
+      -4.444
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 280,
+        "name": "MET",
+        "min_dist_A": 2.75
+      },
+      {
+        "chain": "A",
+        "seq": 263,
+        "name": "HIS",
+        "min_dist_A": 3.203
+      },
+      {
+        "chain": "A",
+        "seq": 260,
+        "name": "ASN",
+        "min_dist_A": 3.261
+      }
+    ],
+    "pose_file": "REF004_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "KA001",
+    "name": "5-Fluorokojic acid",
+    "smiles": "O=C1OC(CO)=CC(=O)[C@@H]1F",
+    "vina_score_kcal_mol": -5.599,
+    "all_pose_scores": [
+      -5.599,
+      -5.593,
+      -5.373,
+      -5.245,
+      -5.076,
+      -4.016,
+      -3.862,
+      -3.833,
+      -3.741
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 256,
+        "name": "GLU",
+        "min_dist_A": 3.095
+      },
+      {
+        "chain": "A",
+        "seq": 322,
+        "name": "GLU",
+        "min_dist_A": 3.15
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.205
+      }
+    ],
+    "pose_file": "KA001_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "KA002",
+    "name": "5-Chlorokojic acid",
+    "smiles": "O=C1OC(CO)=CC(=O)[C@@H]1Cl",
+    "vina_score_kcal_mol": -5.69,
+    "all_pose_scores": [
+      -5.69,
+      -5.364,
+      -5.216,
+      -4.825,
+      -4.817,
+      -4.644,
+      -4.617,
+      -4.426,
+      -4.199
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 256,
+        "name": "GLU",
+        "min_dist_A": 3.088
+      },
+      {
+        "chain": "A",
+        "seq": 244,
+        "name": "HIS",
+        "min_dist_A": 3.113
+      },
+      {
+        "chain": "A",
+        "seq": 85,
+        "name": "HIS",
+        "min_dist_A": 3.167
+      }
+    ],
+    "pose_file": "KA002_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "KA003",
+    "name": "5-Methylkojic acid",
+    "smiles": "O=C1OC(CO)=CC(=O)[C@@H]1C",
+    "vina_score_kcal_mol": -5.868,
+    "all_pose_scores": [
+      -5.868,
+      -5.676,
+      -5.534,
+      -5.205,
+      -5.16,
+      -5.132,
+      -4.863,
+      -4.692,
+      -4.301
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 280,
+        "name": "MET",
+        "min_dist_A": 2.954
+      },
+      {
+        "chain": "A",
+        "seq": 296,
+        "name": "HIS",
+        "min_dist_A": 3.134
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.173
+      }
+    ],
+    "pose_file": "KA003_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "KA004",
+    "name": "Kojic acid methyl ester",
+    "smiles": "O=C1OC(COC)=CC(=O)1",
+    "vina_score_kcal_mol": -4.898,
+    "all_pose_scores": [
+      -4.898,
+      -4.691,
+      -4.67,
+      -4.613,
+      -4.515,
+      -3.995,
+      -3.945,
+      -3.891,
+      -3.834
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 260,
+        "name": "ASN",
+        "min_dist_A": 3.155
+      },
+      {
+        "chain": "A",
+        "seq": 281,
+        "name": "GLY",
+        "min_dist_A": 3.209
+      },
+      {
+        "chain": "A",
+        "seq": 264,
+        "name": "PHE",
+        "min_dist_A": 3.269
+      }
+    ],
+    "pose_file": "KA004_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "HQ001",
+    "name": "4-Methoxyphenol",
+    "smiles": "COc1ccc(O)cc1",
+    "vina_score_kcal_mol": -5.547,
+    "all_pose_scores": [
+      -5.547,
+      -5.322,
+      -5.228,
+      -5.091,
+      -4.522,
+      -4.217,
+      -4.214,
+      -4.201,
+      -4.182
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 280,
+        "name": "MET",
+        "min_dist_A": 2.822
+      },
+      {
+        "chain": "A",
+        "seq": 296,
+        "name": "HIS",
+        "min_dist_A": 3.242
+      },
+      {
+        "chain": "A",
+        "seq": 260,
+        "name": "ASN",
+        "min_dist_A": 3.279
+      }
+    ],
+    "pose_file": "HQ001_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "HQ002",
+    "name": "Catechol",
+    "smiles": "Oc1ccccc1O",
+    "vina_score_kcal_mol": -5.293,
+    "all_pose_scores": [
+      -5.293,
+      -5.268,
+      -5.164,
+      -5.12,
+      -5.111,
+      -5.071,
+      -5.069,
+      -4.365,
+      -4.16
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 280,
+        "name": "MET",
+        "min_dist_A": 2.914
+      },
+      {
+        "chain": "A",
+        "seq": 281,
+        "name": "GLY",
+        "min_dist_A": 3.257
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.283
+      }
+    ],
+    "pose_file": "HQ002_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "HQ003",
+    "name": "4-tert-Butylcatechol",
+    "smiles": "Oc1ccc(C(C)(C)C)cc1O",
+    "vina_score_kcal_mol": -5.952,
+    "all_pose_scores": [
+      -5.952,
+      -5.852,
+      -5.614,
+      -5.029,
+      -4.923,
+      -4.875,
+      -4.788,
+      -4.697,
+      41.61
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 85,
+        "name": "HIS",
+        "min_dist_A": 3.11
+      },
+      {
+        "chain": "A",
+        "seq": 263,
+        "name": "HIS",
+        "min_dist_A": 3.234
+      },
+      {
+        "chain": "A",
+        "seq": 256,
+        "name": "GLU",
+        "min_dist_A": 3.235
+      }
+    ],
+    "pose_file": "HQ003_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "HQ004",
+    "name": "4-Fluorocatechol",
+    "smiles": "Oc1ccc(F)cc1O",
+    "vina_score_kcal_mol": -5.609,
+    "all_pose_scores": [
+      -5.609,
+      -5.596,
+      -5.577,
+      -5.489,
+      -5.474,
+      -5.357,
+      -4.353,
+      -3.826,
+      3.996
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 280,
+        "name": "MET",
+        "min_dist_A": 3.06
+      },
+      {
+        "chain": "A",
+        "seq": 323,
+        "name": "ALA",
+        "min_dist_A": 3.105
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.273
+      }
+    ],
+    "pose_file": "HQ004_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "HQ005",
+    "name": "4-Chlororesorcinol",
+    "smiles": "Oc1cccc(O)c1Cl",
+    "vina_score_kcal_mol": -5.908,
+    "all_pose_scores": [
+      -5.908,
+      -5.856,
+      -5.639,
+      -5.636,
+      -5.374,
+      -5.161,
+      -4.724,
+      -4.52,
+      -4.396
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 61,
+        "name": "HIS",
+        "min_dist_A": 3.282
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.413
+      },
+      {
+        "chain": "A",
+        "seq": 85,
+        "name": "HIS",
+        "min_dist_A": 3.422
+      }
+    ],
+    "pose_file": "HQ005_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "TL001",
+    "name": "3-Methyltropolone",
+    "smiles": "O=C1C=CC=CC(O)=C1C",
+    "vina_score_kcal_mol": -6.241,
+    "all_pose_scores": [
+      -6.241,
+      -6.2,
+      -6.021,
+      -5.863,
+      -5.75,
+      -4.86,
+      -4.843,
+      -4.614,
+      -4.537
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 85,
+        "name": "HIS",
+        "min_dist_A": 3.239
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.29
+      },
+      {
+        "chain": "A",
+        "seq": 281,
+        "name": "GLY",
+        "min_dist_A": 3.418
+      }
+    ],
+    "pose_file": "TL001_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "TL002",
+    "name": "3-Chlorotropolone",
+    "smiles": "O=C1C=CC=CC(O)=C1Cl",
+    "vina_score_kcal_mol": -6.195,
+    "all_pose_scores": [
+      -6.195,
+      -5.972,
+      -5.917,
+      -5.852,
+      -5.814,
+      -5.547,
+      -4.667,
+      -4.667,
+      -4.507
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 260,
+        "name": "ASN",
+        "min_dist_A": 3.165
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.36
+      },
+      {
+        "chain": "A",
+        "seq": 281,
+        "name": "GLY",
+        "min_dist_A": 3.385
+      }
+    ],
+    "pose_file": "TL002_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "TL003",
+    "name": "4-Nitrotropolone",
+    "smiles": "O=C1C=C([N+](=O)[O-])C=CC(O)=C1",
+    "vina_score_kcal_mol": -6.131,
+    "all_pose_scores": [
+      -6.131,
+      -5.932,
+      -5.732,
+      -5.535,
+      -5.332,
+      -5.303,
+      -5.184,
+      -5.165,
+      -4.868
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 61,
+        "name": "HIS",
+        "min_dist_A": 2.977
+      },
+      {
+        "chain": "A",
+        "seq": 286,
+        "name": "ALA",
+        "min_dist_A": 3.256
+      },
+      {
+        "chain": "A",
+        "seq": 259,
+        "name": "HIS",
+        "min_dist_A": 3.276
+      }
+    ],
+    "pose_file": "TL003_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "TL004",
+    "name": "Beta-Thujaplicin",
+    "smiles": "O=C1C=CC=CC(O)=C1C(C)C",
+    "vina_score_kcal_mol": -6.292,
+    "all_pose_scores": [
+      -6.292,
+      -5.956,
+      -5.389,
+      -5.214,
+      -5.185,
+      -5.115,
+      -4.967,
+      -4.955,
+      -4.782
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 280,
+        "name": "MET",
+        "min_dist_A": 2.954
+      },
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.272
+      },
+      {
+        "chain": "A",
+        "seq": 61,
+        "name": "HIS",
+        "min_dist_A": 3.325
+      }
+    ],
+    "pose_file": "TL004_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "NOV001",
+    "name": "Oxyresveratrol",
+    "smiles": "Oc1ccc(/C=C/c2cc(O)cc(O)c2)cc1O",
+    "vina_score_kcal_mol": -5.671,
+    "all_pose_scores": [
+      -5.671,
+      -5.628,
+      -5.598,
+      -5.522,
+      -5.508,
+      -5.504,
+      -5.485,
+      -5.475,
+      -5.415
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 256,
+        "name": "GLU",
+        "min_dist_A": 3.063
+      },
+      {
+        "chain": "A",
+        "seq": 259,
+        "name": "HIS",
+        "min_dist_A": 3.111
+      },
+      {
+        "chain": "A",
+        "seq": 85,
+        "name": "HIS",
+        "min_dist_A": 3.15
+      }
+    ],
+    "pose_file": "NOV001_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "NOV002",
+    "name": "4-Hydroxybenzaldehyde",
+    "smiles": "O=Cc1ccc(O)cc1",
+    "vina_score_kcal_mol": -5.554,
+    "all_pose_scores": [
+      -5.554,
+      -5.394,
+      -5.393,
+      -4.945,
+      -4.66,
+      -4.649,
+      -4.453,
+      -4.396,
+      -4.261
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 61,
+        "name": "HIS",
+        "min_dist_A": 3.23
+      },
+      {
+        "chain": "A",
+        "seq": 85,
+        "name": "HIS",
+        "min_dist_A": 3.275
+      },
+      {
+        "chain": "A",
+        "seq": 260,
+        "name": "ASN",
+        "min_dist_A": 3.287
+      }
+    ],
+    "pose_file": "NOV002_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "NOV003",
+    "name": "Caffeic acid",
+    "smiles": "OC(=O)/C=C/c1ccc(O)c(O)c1",
+    "vina_score_kcal_mol": -6.273,
+    "all_pose_scores": [
+      -6.273,
+      -6.027,
+      -5.521,
+      -5.015,
+      -4.94,
+      -4.934,
+      -4.592,
+      -4.575,
+      -4.546
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 282,
+        "name": "SER",
+        "min_dist_A": 3.003
+      },
+      {
+        "chain": "A",
+        "seq": 260,
+        "name": "ASN",
+        "min_dist_A": 3.218
+      },
+      {
+        "chain": "A",
+        "seq": 61,
+        "name": "HIS",
+        "min_dist_A": 3.3
+      }
+    ],
+    "pose_file": "NOV003_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "NOV004",
+    "name": "Mimosine",
+    "smiles": "N[C@@H](CC1=CC(=O)C(O)=NC1=O)C(=O)O",
+    "vina_score_kcal_mol": -5.838,
+    "all_pose_scores": [
+      -5.838,
+      -5.8,
+      -5.698,
+      -5.607,
+      -5.595,
+      -5.345,
+      -5.09,
+      -4.831,
+      -4.748
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 286,
+        "name": "ALA",
+        "min_dist_A": 3.012
+      },
+      {
+        "chain": "A",
+        "seq": 283,
+        "name": "VAL",
+        "min_dist_A": 3.184
+      },
+      {
+        "chain": "A",
+        "seq": 244,
+        "name": "HIS",
+        "min_dist_A": 3.252
+      }
+    ],
+    "pose_file": "NOV004_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  },
+  {
+    "id": "NOV005",
+    "name": "Hydroxamic acid-tropolone hybrid",
+    "smiles": "O=C1C=CC=CC(O)=C1C(=O)NO",
+    "vina_score_kcal_mol": -6.913,
+    "all_pose_scores": [
+      -6.913,
+      -6.783,
+      -6.457,
+      -6.429,
+      -6.405,
+      -6.279,
+      -5.94,
+      -5.929,
+      -5.66
+    ],
+    "top_interacting_residues": [
+      {
+        "chain": "A",
+        "seq": 296,
+        "name": "HIS",
+        "min_dist_A": 2.908
+      },
+      {
+        "chain": "A",
+        "seq": 283,
+        "name": "VAL",
+        "min_dist_A": 2.972
+      },
+      {
+        "chain": "A",
+        "seq": 85,
+        "name": "HIS",
+        "min_dist_A": 3.11
+      }
+    ],
+    "pose_file": "NOV005_pose.pdbqt",
+    "prep_method": "meeko",
+    "status": "OK",
+    "boltz_affinity": null,
+    "boltz_note": "Skipped: no Boltz-2 weights found in models/"
+  }
+]

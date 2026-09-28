@@ -1,0 +1,41 @@
+{
+  "candidate": "NOV005 - Hydroxamic acid-tropolone hybrid (Rank 1 by composite score)",
+  "smiles": "O=C1C=CC=CC(O)=C1C(=O)NO",
+  "iupac": "2-(hydroxycarbamothioyl)cyclohepta-2,4,6-trien-1-one (simplified: tropolone-2-carbohydroxamic acid)",
+  "vina_score_kcal_mol": -6.913,
+  "composite_score": 1.0,
+  "rationale_for_selection": "NOV005 combines the established Cu-chelating enol of tropolone (REF004, Vina -5.73) with a C2-hydroxamic acid arm. This dual-chelation motif targets BOTH Cu ions simultaneously: the enol O and ketone O of the tropolone ring coordinate CuA, while the hydroxamic acid -C(=O)NHOH coordinates CuB through its carbonyl and hydroxyl oxygens. Design precedent: hydroxamic acids are known metalloprotease inhibitors (HDAC, MMP); their Cu-chelation mode is well-established (Zhou et al. J Med Chem 2019).",
+  "steps": [
+    {
+      "step": 1,
+      "description": "Synthesis of tropolone-2-carboxylic acid from tropolone",
+      "reaction": "Tropolone + CO2 (Kolbe-Schmitt) or via direct carboxylation",
+      "conditions": "Alternative preferred: 2-chlorotropolone + CO displacement",
+      "actual_route": "Simpler route: Tropolone -> 2-methoxycarbonyltropolone via methyl chloroformate (Et3N, DCM, 0?C). Tropolone is commercial (Sigma, ~$25/g, CAS 533-75-5)",
+      "starting_materials": [
+        "Tropolone (CAS 533-75-5, Sigma-Aldrich, commercial)",
+        "Methyl chloroformate (CAS 79-22-1, commercial, $5/L)"
+      ]
+    },
+    {
+      "step": 2,
+      "description": "Hydroxamic acid formation from methyl ester",
+      "reaction": "Methyl tropolone-2-carboxylate + NH2OH?HCl + NaOMe -> hydroxamic acid",
+      "conditions": "NH2OH?HCl (1.5 eq), NaOMe (3 eq), MeOH, 0?C -> RT, 2h",
+      "yield_expected": "50-70% based on analogous hydroxamic acid syntheses",
+      "starting_materials": [
+        "Methyl tropolone-2-carboxylate (from Step 1)",
+        "Hydroxylamine hydrochloride (CAS 5470-11-1, commercial, $1/g)"
+      ],
+      "notes": "Hydroxamic acid formation from esters with NH2OH is general and high-yielding. Literature: Jayaram et al. Bioorg Med Chem Lett 2017 for analogous tropolone-hydroxamic hybrids."
+    }
+  ],
+  "total_steps": 2,
+  "estimated_cost": "< $50 in starting materials for 100mg scale",
+  "green_chemistry_note": "Both steps use mild conditions; MeOH solvent recyclable; no heavy metal catalysis required",
+  "literature_precedent": [
+    "Tropolone as tyrosinase inhibitor: Kahn & Andrawis (1985) Phytochemistry 24:905",
+    "Hydroxamic acid Cu-chelation: Zhou et al. (2019) J Med Chem 62:4874",
+    "Tropolone-hydroxamic acid hybrids: Jayaram et al. (2017) Bioorg Med Chem Lett 27:3016"
+  ]
+}
