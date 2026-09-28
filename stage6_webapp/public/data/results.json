@@ -1,0 +1,998 @@
+{
+  "meta": {
+    "pdb_id": "2Y9X",
+    "tool_versions": {
+      "vina": "1.2.7",
+      "rdkit": "2023.09.5",
+      "biopython": "1.81"
+    },
+    "docking_box": {
+      "center_x": -9.686,
+      "center_y": -24.903,
+      "center_z": -40.217,
+      "size_x": 20.525,
+      "size_y": 19.766,
+      "size_z": 17.661
+    },
+    "exhaustiveness": 8,
+    "seeds": [],
+    "redocking_rmsd": 0.85,
+    "ranking_formula": "composite = 0.50*vina_norm + 0.25*safety_norm + 0.25*druglike_norm",
+    "weights": {
+      "vina": 0.5,
+      "safety": 0.25,
+      "druglike": 0.25
+    },
+    "generated_at": "2026-09-28T09:26:58.023453"
+  },
+  "compounds": [
+    {
+      "id": "NOV005",
+      "name": "Hydroxamic acid-tropolone hybrid",
+      "type": "candidate",
+      "rank": 1,
+      "smiles": "O=C1C=CC=CC(O)=C1C(=O)NO",
+      "svg_path": "/data/structures/2d/NOV005.svg",
+      "vina_score": -6.913,
+      "pose_file": "/data/structures/NOV005_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 296,
+          "name": "HIS",
+          "min_dist_A": 2.908
+        },
+        {
+          "chain": "A",
+          "seq": 283,
+          "name": "VAL",
+          "min_dist_A": 2.972
+        },
+        {
+          "chain": "A",
+          "seq": 85,
+          "name": "HIS",
+          "min_dist_A": 3.11
+        }
+      ],
+      "copper_distance_a": 1.55,
+      "mw": 181.038,
+      "logp": -0.129,
+      "hbd": 3,
+      "hba": 4,
+      "tpsa": 86.63,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 1.0,
+      "rationale": "Adds hydroxamic acid arm to tropolone; dual chelation mode (enol-O + hydroxamate) targeting both Cu ions simultaneously",
+      "boltz_affinity": null,
+      "source_files": [
+        "NOV005_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "TL004",
+      "name": "Beta-Thujaplicin",
+      "type": "candidate",
+      "rank": 2,
+      "smiles": "O=C1C=CC=CC(O)=C1C(C)C",
+      "svg_path": "/data/structures/2d/TL004.svg",
+      "vina_score": -6.292,
+      "pose_file": "/data/structures/TL004_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 280,
+          "name": "MET",
+          "min_dist_A": 2.954
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.272
+        },
+        {
+          "chain": "A",
+          "seq": 61,
+          "name": "HIS",
+          "min_dist_A": 3.325
+        }
+      ],
+      "copper_distance_a": 3.26,
+      "mw": 164.084,
+      "logp": 1.876,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 37.3,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.8459,
+      "rationale": "Natural tropolone derivative from Western red cedar; known copper chelator with antimicrobial activity",
+      "boltz_affinity": null,
+      "source_files": [
+        "TL004_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "TL001",
+      "name": "3-Methyltropolone",
+      "type": "candidate",
+      "rank": 3,
+      "smiles": "O=C1C=CC=CC(O)=C1C",
+      "svg_path": "/data/structures/2d/TL001.svg",
+      "vina_score": -6.241,
+      "pose_file": "/data/structures/TL001_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 85,
+          "name": "HIS",
+          "min_dist_A": 3.239
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.29
+        },
+        {
+          "chain": "A",
+          "seq": 281,
+          "name": "GLY",
+          "min_dist_A": 3.418
+        }
+      ],
+      "copper_distance_a": 2.9,
+      "mw": 136.052,
+      "logp": 1.061,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 37.3,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.8333,
+      "rationale": "Methyl at C3 adjacent to O=C; exploits hydrophobic space seen with tropolone pose",
+      "boltz_affinity": null,
+      "source_files": [
+        "TL001_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "TL002",
+      "name": "3-Chlorotropolone",
+      "type": "candidate",
+      "rank": 4,
+      "smiles": "O=C1C=CC=CC(O)=C1Cl",
+      "svg_path": "/data/structures/2d/TL002.svg",
+      "vina_score": -6.195,
+      "pose_file": "/data/structures/TL002_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 260,
+          "name": "ASN",
+          "min_dist_A": 3.165
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.36
+        },
+        {
+          "chain": "A",
+          "seq": 281,
+          "name": "GLY",
+          "min_dist_A": 3.385
+        }
+      ],
+      "copper_distance_a": 3.19,
+      "mw": 155.998,
+      "logp": 1.406,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 37.3,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.8218,
+      "rationale": "Halogen at C3 tests H-bond acceptor capacity vs steric clash in tight pocket",
+      "boltz_affinity": null,
+      "source_files": [
+        "TL002_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "HQ005",
+      "name": "4-Chlororesorcinol",
+      "type": "candidate",
+      "rank": 5,
+      "smiles": "Oc1cccc(O)c1Cl",
+      "svg_path": "/data/structures/2d/HQ005.svg",
+      "vina_score": -5.908,
+      "pose_file": "/data/structures/HQ005_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 61,
+          "name": "HIS",
+          "min_dist_A": 3.282
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.413
+        },
+        {
+          "chain": "A",
+          "seq": 85,
+          "name": "HIS",
+          "min_dist_A": 3.422
+        }
+      ],
+      "copper_distance_a": 2.55,
+      "mw": 143.998,
+      "logp": 1.751,
+      "hbd": 2,
+      "hba": 2,
+      "tpsa": 40.46,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.7506,
+      "rationale": "Meta-diol + para-Cl: explores effect of diol positioning on Cu coordination geometry",
+      "boltz_affinity": null,
+      "source_files": [
+        "HQ005_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "REF002",
+      "name": "Arbutin",
+      "type": "reference",
+      "rank": 6,
+      "smiles": "OC[C@H]1O[C@@H](Oc2ccc(O)cc2)[C@H](O)[C@@H](O)[C@@H]1O",
+      "svg_path": "/data/structures/2d/REF002.svg",
+      "vina_score": -5.898,
+      "pose_file": "/data/structures/REF002_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 280,
+          "name": "MET",
+          "min_dist_A": 2.702
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.189
+        },
+        {
+          "chain": "A",
+          "seq": 81,
+          "name": "ASN",
+          "min_dist_A": 3.269
+        }
+      ],
+      "copper_distance_a": 2.14,
+      "mw": 272.09,
+      "logp": -1.429,
+      "hbd": 5,
+      "hba": 7,
+      "tpsa": 119.61,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.7481,
+      "rationale": "",
+      "boltz_affinity": null,
+      "source_files": [
+        "REF002_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "KA003",
+      "name": "5-Methylkojic acid",
+      "type": "candidate",
+      "rank": 7,
+      "smiles": "O=C1OC(CO)=CC(=O)[C@@H]1C",
+      "svg_path": "/data/structures/2d/KA003.svg",
+      "vina_score": -5.868,
+      "pose_file": "/data/structures/KA003_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 280,
+          "name": "MET",
+          "min_dist_A": 2.954
+        },
+        {
+          "chain": "A",
+          "seq": 296,
+          "name": "HIS",
+          "min_dist_A": 3.134
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.173
+        }
+      ],
+      "copper_distance_a": 1.71,
+      "mw": 156.042,
+      "logp": -0.375,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 63.6,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.7407,
+      "rationale": "Methyl group explores hydrophobic pocket near CuA (PHE90, LEU89)",
+      "boltz_affinity": null,
+      "source_files": [
+        "KA003_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "NOV004",
+      "name": "Mimosine",
+      "type": "candidate",
+      "rank": 8,
+      "smiles": "N[C@@H](CC1=CC(=O)C(O)=NC1=O)C(=O)O",
+      "svg_path": "/data/structures/2d/NOV004.svg",
+      "vina_score": -5.838,
+      "pose_file": "/data/structures/NOV004_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 286,
+          "name": "ALA",
+          "min_dist_A": 3.012
+        },
+        {
+          "chain": "A",
+          "seq": 283,
+          "name": "VAL",
+          "min_dist_A": 3.184
+        },
+        {
+          "chain": "A",
+          "seq": 244,
+          "name": "HIS",
+          "min_dist_A": 3.252
+        }
+      ],
+      "copper_distance_a": 2.1,
+      "mw": 212.043,
+      "logp": -1.219,
+      "hbd": 3,
+      "hba": 6,
+      "tpsa": 130.05,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.7333,
+      "rationale": "Plant amino acid with hydroxypyridinone chelating group; strong Cu binder different from catechol",
+      "boltz_affinity": null,
+      "source_files": [
+        "NOV004_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "NOV003",
+      "name": "Caffeic acid",
+      "type": "candidate",
+      "rank": 9,
+      "smiles": "OC(=O)/C=C/c1ccc(O)c(O)c1",
+      "svg_path": "/data/structures/2d/NOV003.svg",
+      "vina_score": -6.273,
+      "pose_file": "/data/structures/NOV003_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.003
+        },
+        {
+          "chain": "A",
+          "seq": 260,
+          "name": "ASN",
+          "min_dist_A": 3.218
+        },
+        {
+          "chain": "A",
+          "seq": 61,
+          "name": "HIS",
+          "min_dist_A": 3.3
+        }
+      ],
+      "copper_distance_a": 1.77,
+      "mw": 180.042,
+      "logp": 1.196,
+      "hbd": 3,
+      "hba": 4,
+      "tpsa": 77.76,
+      "safety_class": "moderate",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.7162,
+      "rationale": "Catechol + alpha,beta-unsaturated acid; known competitive inhibitor; provides extended chelation arm",
+      "boltz_affinity": null,
+      "source_files": [
+        "NOV003_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "REF004",
+      "name": "Tropolone",
+      "type": "reference",
+      "rank": 10,
+      "smiles": "O=C1C=CC=CC(O)=C1",
+      "svg_path": "/data/structures/2d/REF004.svg",
+      "vina_score": -5.728,
+      "pose_file": "/data/structures/REF004_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 280,
+          "name": "MET",
+          "min_dist_A": 2.75
+        },
+        {
+          "chain": "A",
+          "seq": 263,
+          "name": "HIS",
+          "min_dist_A": 3.203
+        },
+        {
+          "chain": "A",
+          "seq": 260,
+          "name": "ASN",
+          "min_dist_A": 3.261
+        }
+      ],
+      "copper_distance_a": 2.32,
+      "mw": 122.037,
+      "logp": 0.752,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 37.3,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.706,
+      "rationale": "",
+      "boltz_affinity": null,
+      "source_files": [
+        "REF004_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "KA002",
+      "name": "5-Chlorokojic acid",
+      "type": "candidate",
+      "rank": 11,
+      "smiles": "O=C1OC(CO)=CC(=O)[C@@H]1Cl",
+      "svg_path": "/data/structures/2d/KA002.svg",
+      "vina_score": -5.69,
+      "pose_file": "/data/structures/KA002_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 256,
+          "name": "GLU",
+          "min_dist_A": 3.088
+        },
+        {
+          "chain": "A",
+          "seq": 244,
+          "name": "HIS",
+          "min_dist_A": 3.113
+        },
+        {
+          "chain": "A",
+          "seq": 85,
+          "name": "HIS",
+          "min_dist_A": 3.167
+        }
+      ],
+      "copper_distance_a": 1.75,
+      "mw": 175.988,
+      "logp": -0.404,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 63.6,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.6965,
+      "rationale": "Cl provides stronger steric effect than F; tests halogen tolerance at Cu site",
+      "boltz_affinity": null,
+      "source_files": [
+        "KA002_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "TL003",
+      "name": "4-Nitrotropolone",
+      "type": "candidate",
+      "rank": 12,
+      "smiles": "O=C1C=C([N+](=O)[O-])C=CC(O)=C1",
+      "svg_path": "/data/structures/2d/TL003.svg",
+      "vina_score": -6.131,
+      "pose_file": "/data/structures/TL003_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 61,
+          "name": "HIS",
+          "min_dist_A": 2.977
+        },
+        {
+          "chain": "A",
+          "seq": 286,
+          "name": "ALA",
+          "min_dist_A": 3.256
+        },
+        {
+          "chain": "A",
+          "seq": 259,
+          "name": "HIS",
+          "min_dist_A": 3.276
+        }
+      ],
+      "copper_distance_a": 2.16,
+      "mw": 167.022,
+      "logp": 0.661,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 80.44,
+      "safety_class": "moderate",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.681,
+      "rationale": "Strong EWG at C4 alters pi-electron density of chelating enol; toxicophore flag expected",
+      "boltz_affinity": null,
+      "source_files": [
+        "TL003_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "KA001",
+      "name": "5-Fluorokojic acid",
+      "type": "candidate",
+      "rank": 13,
+      "smiles": "O=C1OC(CO)=CC(=O)[C@@H]1F",
+      "svg_path": "/data/structures/2d/KA001.svg",
+      "vina_score": -5.599,
+      "pose_file": "/data/structures/KA001_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 256,
+          "name": "GLU",
+          "min_dist_A": 3.095
+        },
+        {
+          "chain": "A",
+          "seq": 322,
+          "name": "GLU",
+          "min_dist_A": 3.15
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.205
+        }
+      ],
+      "copper_distance_a": 1.76,
+      "mw": 160.017,
+      "logp": -0.673,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 63.6,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.6739,
+      "rationale": "Electron-withdrawing F at C5 increases electrophilicity of carbonyl, potentially tightening Cu chelation",
+      "boltz_affinity": null,
+      "source_files": [
+        "KA001_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "NOV002",
+      "name": "4-Hydroxybenzaldehyde",
+      "type": "candidate",
+      "rank": 14,
+      "smiles": "O=Cc1ccc(O)cc1",
+      "svg_path": "/data/structures/2d/NOV002.svg",
+      "vina_score": -5.554,
+      "pose_file": "/data/structures/NOV002_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 61,
+          "name": "HIS",
+          "min_dist_A": 3.23
+        },
+        {
+          "chain": "A",
+          "seq": 85,
+          "name": "HIS",
+          "min_dist_A": 3.275
+        },
+        {
+          "chain": "A",
+          "seq": 260,
+          "name": "ASN",
+          "min_dist_A": 3.287
+        }
+      ],
+      "copper_distance_a": 2.13,
+      "mw": 122.037,
+      "logp": 1.205,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 37.3,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.6628,
+      "rationale": "Simple phenolic aldehyde; Schiff-base former that may covalently cap active-site Lys",
+      "boltz_affinity": null,
+      "source_files": [
+        "NOV002_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "HQ001",
+      "name": "4-Methoxyphenol",
+      "type": "candidate",
+      "rank": 15,
+      "smiles": "COc1ccc(O)cc1",
+      "svg_path": "/data/structures/2d/HQ001.svg",
+      "vina_score": -5.547,
+      "pose_file": "/data/structures/HQ001_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 280,
+          "name": "MET",
+          "min_dist_A": 2.822
+        },
+        {
+          "chain": "A",
+          "seq": 296,
+          "name": "HIS",
+          "min_dist_A": 3.242
+        },
+        {
+          "chain": "A",
+          "seq": 260,
+          "name": "ASN",
+          "min_dist_A": 3.279
+        }
+      ],
+      "copper_distance_a": 2.04,
+      "mw": 124.052,
+      "logp": 1.401,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 29.46,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.661,
+      "rationale": "Known partial tyrosinase inhibitor; methoxy vs hydroxyl tests H-bond donor requirement",
+      "boltz_affinity": null,
+      "source_files": [
+        "HQ001_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "HQ003",
+      "name": "4-tert-Butylcatechol",
+      "type": "candidate",
+      "rank": 16,
+      "smiles": "Oc1ccc(C(C)(C)C)cc1O",
+      "svg_path": "/data/structures/2d/HQ003.svg",
+      "vina_score": -5.952,
+      "pose_file": "/data/structures/HQ003_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 85,
+          "name": "HIS",
+          "min_dist_A": 3.11
+        },
+        {
+          "chain": "A",
+          "seq": 263,
+          "name": "HIS",
+          "min_dist_A": 3.234
+        },
+        {
+          "chain": "A",
+          "seq": 256,
+          "name": "GLU",
+          "min_dist_A": 3.235
+        }
+      ],
+      "copper_distance_a": 1.78,
+      "mw": 166.099,
+      "logp": 2.395,
+      "hbd": 2,
+      "hba": 2,
+      "tpsa": 40.46,
+      "safety_class": "moderate",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.6365,
+      "rationale": "Bulky tBu fills hydrophobic sub-pocket (TRP93, PHE292); commercial antioxidant",
+      "boltz_affinity": null,
+      "source_files": [
+        "HQ003_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "REF003",
+      "name": "Hydroquinone",
+      "type": "reference",
+      "rank": 17,
+      "smiles": "Oc1ccc(O)cc1",
+      "svg_path": "/data/structures/2d/REF003.svg",
+      "vina_score": -5.386,
+      "pose_file": "/data/structures/REF003_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 280,
+          "name": "MET",
+          "min_dist_A": 2.893
+        },
+        {
+          "chain": "A",
+          "seq": 260,
+          "name": "ASN",
+          "min_dist_A": 3.149
+        },
+        {
+          "chain": "A",
+          "seq": 324,
+          "name": "THR",
+          "min_dist_A": 3.265
+        }
+      ],
+      "copper_distance_a": 2.72,
+      "mw": 110.037,
+      "logp": 1.098,
+      "hbd": 2,
+      "hba": 2,
+      "tpsa": 40.46,
+      "safety_class": "low",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.6211,
+      "rationale": "",
+      "boltz_affinity": null,
+      "source_files": [
+        "REF003_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "NOV001",
+      "name": "Oxyresveratrol",
+      "type": "candidate",
+      "rank": 18,
+      "smiles": "Oc1ccc(/C=C/c2cc(O)cc(O)c2)cc1O",
+      "svg_path": "/data/structures/2d/NOV001.svg",
+      "vina_score": -5.671,
+      "pose_file": "/data/structures/NOV001_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 256,
+          "name": "GLU",
+          "min_dist_A": 3.063
+        },
+        {
+          "chain": "A",
+          "seq": 259,
+          "name": "HIS",
+          "min_dist_A": 3.111
+        },
+        {
+          "chain": "A",
+          "seq": 85,
+          "name": "HIS",
+          "min_dist_A": 3.15
+        }
+      ],
+      "copper_distance_a": 2.4,
+      "mw": 244.074,
+      "logp": 2.679,
+      "hbd": 4,
+      "hba": 4,
+      "tpsa": 80.92,
+      "safety_class": "moderate",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.5668,
+      "rationale": "Natural stilbene with two catechol-like OH pairs; potent PPO inhibitor in literature (IC50 ~1 uM); included as novel positive control",
+      "boltz_affinity": null,
+      "source_files": [
+        "NOV001_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "HQ004",
+      "name": "4-Fluorocatechol",
+      "type": "candidate",
+      "rank": 19,
+      "smiles": "Oc1ccc(F)cc1O",
+      "svg_path": "/data/structures/2d/HQ004.svg",
+      "vina_score": -5.609,
+      "pose_file": "/data/structures/HQ004_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 280,
+          "name": "MET",
+          "min_dist_A": 3.06
+        },
+        {
+          "chain": "A",
+          "seq": 323,
+          "name": "ALA",
+          "min_dist_A": 3.105
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.273
+        }
+      ],
+      "copper_distance_a": 2.35,
+      "mw": 128.027,
+      "logp": 1.237,
+      "hbd": 2,
+      "hba": 2,
+      "tpsa": 40.46,
+      "safety_class": "moderate",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.5514,
+      "rationale": "Fluorine bioisostere of OH; tests whether para-F maintains inhibition",
+      "boltz_affinity": null,
+      "source_files": [
+        "HQ004_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "REF001",
+      "name": "Kojic acid",
+      "type": "reference",
+      "rank": 20,
+      "smiles": "O=C1OC(CO)=CC(=O)1",
+      "svg_path": "/data/structures/2d/REF001.svg",
+      "vina_score": -5.408,
+      "pose_file": "/data/structures/REF001_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 256,
+          "name": "GLU",
+          "min_dist_A": 3.083
+        },
+        {
+          "chain": "A",
+          "seq": 296,
+          "name": "HIS",
+          "min_dist_A": 3.13
+        },
+        {
+          "chain": "A",
+          "seq": 85,
+          "name": "HIS",
+          "min_dist_A": 3.376
+        }
+      ],
+      "copper_distance_a": 1.18,
+      "mw": 128.011,
+      "logp": -1.012,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 63.6,
+      "safety_class": "moderate",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.5016,
+      "rationale": "",
+      "boltz_affinity": null,
+      "source_files": [
+        "REF001_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "HQ002",
+      "name": "Catechol",
+      "type": "candidate",
+      "rank": 21,
+      "smiles": "Oc1ccccc1O",
+      "svg_path": "/data/structures/2d/HQ002.svg",
+      "vina_score": -5.293,
+      "pose_file": "/data/structures/HQ002_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 280,
+          "name": "MET",
+          "min_dist_A": 2.914
+        },
+        {
+          "chain": "A",
+          "seq": 281,
+          "name": "GLY",
+          "min_dist_A": 3.257
+        },
+        {
+          "chain": "A",
+          "seq": 282,
+          "name": "SER",
+          "min_dist_A": 3.283
+        }
+      ],
+      "copper_distance_a": 2.46,
+      "mw": 110.037,
+      "logp": 1.098,
+      "hbd": 2,
+      "hba": 2,
+      "tpsa": 40.46,
+      "safety_class": "moderate",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.473,
+      "rationale": "Ortho-diol: strong Cu chelator; substrate-like but inhibitory at high concentration",
+      "boltz_affinity": null,
+      "source_files": [
+        "HQ002_pose.pdbqt"
+      ]
+    },
+    {
+      "id": "KA004",
+      "name": "Kojic acid methyl ester",
+      "type": "candidate",
+      "rank": 22,
+      "smiles": "O=C1OC(COC)=CC(=O)1",
+      "svg_path": "/data/structures/2d/KA004.svg",
+      "vina_score": -4.898,
+      "pose_file": "/data/structures/KA004_pose.pdbqt",
+      "top_interacting_residues": [
+        {
+          "chain": "A",
+          "seq": 260,
+          "name": "ASN",
+          "min_dist_A": 3.155
+        },
+        {
+          "chain": "A",
+          "seq": 281,
+          "name": "GLY",
+          "min_dist_A": 3.209
+        },
+        {
+          "chain": "A",
+          "seq": 264,
+          "name": "PHE",
+          "min_dist_A": 3.269
+        }
+      ],
+      "copper_distance_a": 2.3,
+      "mw": 142.027,
+      "logp": -0.357,
+      "hbd": 0,
+      "hba": 4,
+      "tpsa": 52.6,
+      "safety_class": "moderate",
+      "safety_source": "RDKit/ProTox 3.0",
+      "composite_score": 0.375,
+      "rationale": "Esterification of hydroxymethyl reduces HBD count (improves logP) while probing pocket volume",
+      "boltz_affinity": null,
+      "source_files": [
+        "KA004_pose.pdbqt"
+      ]
+    }
+  ]
+}

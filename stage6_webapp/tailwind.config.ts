@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#14110D",
-        foreground: "#EDE6D9",
-        oxidation: {
-          green: "#5E8B7E",   // Good / Cool
-          amber: "#B5793B",   // Warning / Heat
-          clay: "#A6543A",    // Bad / Toxic
+        background: "#050A16",
+        foreground: "#E6EAF5",
+        brand: {
+          cyan: "#22E3D0",
+          blue: "#5B8CFF",
+          purple: "#A678F5",
         }
       },
       fontFamily: {
-        serif: ["var(--font-roboto-slab)"],
+        sans: ["var(--font-inter)"],
         mono: ["var(--font-jetbrains-mono)"],
       },
     },
