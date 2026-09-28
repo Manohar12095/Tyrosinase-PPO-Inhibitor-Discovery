@@ -24,11 +24,12 @@ export default function RootLayout({
       <body className="antialiased font-sans flex flex-col min-h-screen">
         <header className="glass-header flex items-center justify-between px-8 bg-[#050811]/90">
           <Link href="/" className="flex items-center gap-3 group">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#00F2FE] stroke-current stroke-[2.2]">
-              <circle cx="12" cy="12" r="4"/>
-              <circle cx="18" cy="6" r="3"/>
-              <circle cx="6" cy="18" r="3"/>
-              <path d="M12 12L18 6M12 12L6 18"/>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="4" stroke="#00F2FE" strokeWidth="2.2" fill="none" />
+              <circle cx="18" cy="6" r="3" stroke="#A855F7" strokeWidth="2.2" fill="none" />
+              <circle cx="6" cy="18" r="3" stroke="#3B82F6" strokeWidth="2.2" fill="none" />
+              <circle cx="4" cy="6" r="2" stroke="#00F2FE" strokeWidth="2" fill="none" />
+              <path d="M12 12L18 6M12 12L6 18M12 12L4 6" stroke="#475569" strokeWidth="1.5" strokeDasharray="2 2" />
             </svg>
             <span className="font-bold text-xl tracking-wider text-white group-hover:text-[#00F2FE] transition-colors uppercase">CTRL+CELL</span>
           </Link>

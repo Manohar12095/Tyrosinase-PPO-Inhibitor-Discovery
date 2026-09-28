@@ -135,18 +135,19 @@ export default function DashboardContent({ data }: { data: Results }) {
                     </td>
                     <td className="p-3 font-mono font-bold text-[#00FF9D] text-sm drop-shadow-[0_0_6px_rgba(0,255,157,0.3)]">{c.vina_score?.toFixed(3)}</td>
                     <td className="p-3">
-                      <span className={`pill-${c.safety_class || 'unknown'} uppercase`}>
-                        {c.safety_class ? `${c.safety_class} RISK` : 'NOT ASSESSED'}
+                      <span className={`pill-${c.safety_class || 'unknown'} uppercase text-[10px] tracking-wider px-2 py-1`}>
+                        {c.safety_class ? `${c.id} - ${c.safety_class}` : 'NOT ASSESSED'}
                       </span>
                     </td>
                     <td className="p-3">
                       <div className="flex items-center gap-3">
-                        <span className="w-10 text-right font-mono text-xs">{c.composite_score.toFixed(3)}</span>
-                        <div className="w-32 h-2 bg-slate-800/90 rounded-full overflow-hidden p-0.5 border border-slate-700/40">
+                        <div className="w-32 h-2 bg-slate-800/90 rounded-full overflow-hidden p-0.5 border border-slate-700/40 relative">
                           <div 
-                            className="h-full rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 shadow-[0_0_8px_rgba(0,242,254,0.5)]" 
+                            className="h-full rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 shadow-[0_0_8px_rgba(0,242,254,0.5)] relative" 
                             style={{ width: `${Math.min(100, Math.max(0, c.composite_score * 100))}%` }}
-                          ></div>
+                          >
+                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-white rounded-full shadow-[0_0_6px_rgba(255,255,255,0.9)]"></div>
+                          </div>
                         </div>
                       </div>
                     </td>
